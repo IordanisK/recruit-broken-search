@@ -51,9 +51,9 @@ function Home() {
         <div className='w-screen shadow-md py-6 px-3 bg:white dark:bg-gray-700 dark:text-white mb-16'>
             <div className='flex container mx-auto'>
                 <h1 className='font-bold text-xl'>Where in the World?</h1>
-                <div className='ml-auto font-medium'>
+                {/* <div className='ml-auto font-medium'>
                     <button onClick={() => toggleDarkMode()} dangerouslySetInnerHTML={{__html: toggleBtn}} ></button>
-                </div>
+                </div> */}
             </div>
         </div>
         <div className='flex container mx-auto mb-16'>
@@ -76,7 +76,7 @@ function Home() {
                 countries.map( (country, index) => <Link to={{ pathname: 'details', state: country}} key={index}>
                     <ThumbDetail 
                         title={country.name.common}
-                        image_url={country.flag}
+                        // image_url={country.flags}
                         population={country.population}
                         region={country.region}
                         capital={country.capital}
